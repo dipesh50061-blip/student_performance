@@ -1,8 +1,8 @@
 # Student Performance Analysis & Prediction
 
-A Machine Learning project focused on analyzing student performance using *Exploratory Data Analysis (EDA)* and building a classification model to predict student performance.
+A Machine Learning project focused on analyzing student performance using **Exploratory Data Analysis (EDA)** and building a classification model to predict student performance.
 
-The project uses a dataset of *4,000 student records* and explores how factors such as study hours, attendance, previous scores, and other student-related attributes relate to final academic performance.
+The project uses a dataset of **4,000 student records** and explores how factors such as study hours, attendance, previous scores, and other student-related attributes relate to final academic performance.
 
 ---
 
@@ -23,39 +23,39 @@ The main objectives of this project are:
 
 ## Dataset
 
-*Dataset:* student_performance_4000.csv
+**Dataset:** `student_performance_4000.csv`
 
-The dataset contains *4,000 student records* and *17 features*.
+The dataset contains **4,000 student records** and **17 features**.
 
 ### Features
 
 | Feature | Description |
 |---|---|
-| student_id | Unique identifier of the student |
-| gender | Gender of the student |
-| age | Age of the student |
-| study_hours | Number of hours spent studying |
-| attendance | Student attendance percentage |
-| previous_score | Previous academic score |
-| assignments_completed | Number of assignments completed |
-| sleep_hours | Average number of hours slept |
-| internet_access | Availability of internet access |
-| parent_education | Education level of parents |
-| extra_activities | Participation in extracurricular activities |
-| family_income | Family income category |
-| class_participation | Level of classroom participation |
-| study_method | Study method used by the student |
-| stress_level | Student stress level |
-| final_score | Final academic score |
-| performance | Target variable representing student performance |
+| `student_id` | Unique identifier of the student |
+| `gender` | Gender of the student |
+| `age` | Age of the student |
+| `study_hours` | Number of hours spent studying |
+| `attendance` | Student attendance percentage |
+| `previous_score` | Previous academic score |
+| `assignments_completed` | Number of assignments completed |
+| `sleep_hours` | Average number of hours slept |
+| `internet_access` | Availability of internet access |
+| `parent_education` | Education level of parents |
+| `extra_activities` | Participation in extracurricular activities |
+| `family_income` | Family income category |
+| `class_participation` | Level of classroom participation |
+| `study_method` | Study method used by the student |
+| `stress_level` | Student stress level |
+| `final_score` | Final academic score |
+| `performance` | Target variable representing student performance |
 
 ### Target Variable
 
 The target variable is:
 
-text
+```text
 performance
-
+```
 
 It represents the student's overall performance category.
 
@@ -63,30 +63,30 @@ It represents the student's overall performance category.
 
 ## Exploratory Data Analysis
 
-The EDA is divided into *Univariate, Bivariate, and Multivariate Analysis*.
+The EDA is divided into **Univariate, Bivariate, and Multivariate Analysis**.
 
 ### 1. Univariate Analysis
 
 The following individual variable distributions are analyzed:
 
-- *Target Distribution* — Distribution of the performance target variable.
-- *Final Score Distribution* — Distribution of students' final_score.
+- **Target Distribution** — Distribution of the `performance` target variable.
+- **Final Score Distribution** — Distribution of students' `final_score`.
 
 ### 2. Bivariate Analysis
 
 The following relationships between two variables are analyzed:
 
-- *Study Hours vs Final Score*
-- *Attendance vs Final Score*
-- *Previous Score vs Final Score*
-- *Performance vs Study Hours*
-- *Performance vs Attendance*
+- **Study Hours vs Final Score**
+- **Attendance vs Final Score**
+- **Previous Score vs Final Score**
+- **Performance vs Study Hours**
+- **Performance vs Attendance**
 
 These analyses help understand relationships between important academic factors and student performance.
 
 ### 3. Multivariate Analysis
 
-Only *correlation analysis* is performed for multivariate analysis.
+Only **correlation analysis** is performed for multivariate analysis.
 
 This includes:
 
@@ -99,13 +99,13 @@ The correlation analysis helps identify the strength and direction of relationsh
 
 ## Machine Learning
 
-The project treats student performance prediction as a *multi-class classification problem*.
+The project treats student performance prediction as a **multi-class classification problem**.
 
 The target variable is:
 
-text
+```text
 performance
-
+```
 
 The Machine Learning workflow includes:
 
@@ -125,9 +125,9 @@ Different classification algorithms are evaluated to determine their performance
 
 The final trained model is saved as:
 
-text
+```text
 models/student_performance_model.pkl
-
+```
 
 ---
 
@@ -143,7 +143,7 @@ The models are evaluated using the following classification metrics:
 - Confusion Matrix
 - Classification Report
 
-*Macro F1 Score* is considered an important evaluation metric because this is a multi-class classification problem and it gives equal importance to each class.
+**Macro F1 Score** is considered an important evaluation metric because this is a multi-class classification problem and it gives equal importance to each class.
 
 ---
 
@@ -153,7 +153,7 @@ The trained model is used to predict student performance based on student-relate
 
 The prediction workflow is:
 
-text
+```text
 Student Input
       ↓
 Data Preprocessing
@@ -163,39 +163,39 @@ Trained ML Model
 Prediction
       ↓
 Student Performance
-
+```
 
 The prediction logic is implemented in:
 
-text
+```text
 src/predict.py
-
+```
 
 ---
 
 ## Streamlit Application
 
-The project includes an interactive *Streamlit application* for student performance prediction.
+The project includes an interactive **Streamlit application** for student performance prediction.
 
 Users can enter student information and obtain a predicted performance category.
 
 The main application file is:
 
-text
+```text
 app.py
-
+```
 
 Run the application using:
 
-bash
+```bash
 streamlit run app.py
-
+```
 
 ---
 
 ## Project Structure
 
-text
+```text
 student-performance/
 │
 ├── data/
@@ -214,18 +214,18 @@ student-performance/
 ├── app.py
 ├── README.md
 └── requirements.txt
-
+```
 
 ### Folder & File Description
 
-- *data/* — Contains the student performance dataset.
-- *models/* — Contains the trained Machine Learning model.
-- *notebooks/student_performance_eda.ipynb* — Contains data exploration, cleaning, and EDA.
-- *notebooks/modeling.ipynb* — Contains preprocessing, model training, evaluation, and final model selection.
-- *src/predict.py* — Contains the prediction functionality used by the application.
-- *app.py* — Main Streamlit application.
-- *requirements.txt* — Contains all required Python libraries.
-- *README.md* — Project documentation.
+- **`data/`** — Contains the student performance dataset.
+- **`models/`** — Contains the trained Machine Learning model.
+- **`notebooks/student_performance_eda.ipynb`** — Contains data exploration, cleaning, and EDA.
+- **`notebooks/modeling.ipynb`** — Contains preprocessing, model training, evaluation, and final model selection.
+- **`src/predict.py`** — Contains the prediction functionality used by the application.
+- **`app.py`** — Main Streamlit application.
+- **`requirements.txt`** — Contains all required Python libraries.
+- **`README.md`** — Project documentation.
 
 ---
 
@@ -249,33 +249,33 @@ student-performance/
 
 ### 1. Clone the Repository
 
-bash
+```bash
 git clone <your-repository-url>
-
+```
 
 Navigate to the project directory:
 
-bash
+```bash
 cd student-performance
-
+```
 
 ### 2. Create a Conda Environment
 
-bash
+```bash
 conda create -n student-performance python=3.11
-
+```
 
 Activate the environment:
 
-bash
+```bash
 conda activate student-performance
-
+```
 
 ### 3. Install Dependencies
 
-bash
+```bash
 pip install -r requirements.txt
-
+```
 
 ---
 
@@ -285,9 +285,9 @@ pip install -r requirements.txt
 
 Open:
 
-text
+```text
 notebooks/student_performance_eda.ipynb
-
+```
 
 Run the notebook to perform the exploratory data analysis.
 
@@ -295,9 +295,9 @@ Run the notebook to perform the exploratory data analysis.
 
 Open:
 
-text
+```text
 notebooks/modeling.ipynb
-
+```
 
 Run the notebook to train and evaluate the Machine Learning models.
 
@@ -305,9 +305,9 @@ Run the notebook to train and evaluate the Machine Learning models.
 
 From the project root directory:
 
-bash
+```bash
 streamlit run app.py
-
+```
 
 The application will open in your default web browser.
 
@@ -315,7 +315,7 @@ The application will open in your default web browser.
 
 ## Machine Learning Workflow
 
-text
+```text
 Dataset
    ↓
 Data Cleaning
@@ -339,7 +339,7 @@ Final Model
 Save Model
    ↓
 Streamlit Prediction App
-
+```
 
 ---
 
@@ -382,4 +382,4 @@ Possible future improvements include:
 
 ## License
 
-This project is created for *educational and portfolio purposes*.
+This project is created for **educational and portfolio purposes**.
