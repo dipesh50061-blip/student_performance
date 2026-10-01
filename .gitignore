@@ -1,0 +1,97 @@
+# ==========================================
+# Student Performance ML Project
+# ==========================================
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# ==========================================
+# DATA
+# ==========================================
+
+# Ignore dataset
+Data/*.csv
+Data/*.xlsx
+Data/*.xls
+Data/*.json
+
+# ==========================================
+# MACHINE LEARNING MODELS
+# ==========================================
+
+# Ignore trained models
+models/*.pkl
+models/*.joblib
+models/*.h5
+models/*.keras
+
+# ==========================================
+# LOGS & TEMP FILES
+# ==========================================
+
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+
+logs/
+
+# ==========================================
+# OS FILES
+# ==========================================
+
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# ==========================================
+# Python build files
+# ==========================================
+
+build/
+dist/
+*.egg-info/
+
+# ==========================================
+# Testing
+# ==========================================
+
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ==========================================
+# Streamlit
+# ==========================================
+
+.streamlit/secrets.toml
+
+# ==========================================
+# Sensitive files
+# ==========================================
+
+*.pem
+*.key
+credentials.json
+secrets.json
